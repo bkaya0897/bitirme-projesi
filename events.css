@@ -1,0 +1,64 @@
+header {
+  position: static;
+}
+body {
+  background: linear-gradient(40deg, rgb(97, 97, 97), rgb(57, 57, 57));
+  color: rgb(75, 75, 75);
+}
+
+main li img {
+  width: 300px;
+  height: 320px;
+  object-fit: cover;
+}
+
+main ul {
+  width: 1200px;
+  margin: 40px auto;
+  flex-direction: column;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px 30px;
+}
+
+main li {
+  display: flex;
+  background-color: whitesmoke;
+  box-shadow: 1px 1px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.item-content {
+  padding: 24px;
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.item-content h2 {
+  margin: 0;
+}
+
+.actions-tab {
+  text-align: right;
+}
+
+.actions-tab a {
+  color: rgb(71, 231, 223);
+  text-shadow: none;
+  font-size: 16px;
+}
+
+.actions-tab a:hover {
+  background-color: rgb(175, 233, 231);
+}
+
+li:nth-of-type(3) {
+  grid-column: 1 / span 2;
+
+  letter-spacing: 1px;
+  line-height: 30px;
+}
